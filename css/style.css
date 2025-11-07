@@ -959,8 +959,19 @@ footer p:first-of-type {
     text-align: left;
    } */
 
-   
+   /* Remove mobile contact box styles for tablet and desktop */
 
+  .contact-card p {
+    border: none;          /* remove the box borders */
+    padding: 0;            /* remove padding */
+    width: auto;           /* reset width */
+    margin: 0;             /* reset margin */
+    font-size: 0.95rem;    /* keep same or adjust */
+    text-align: center;    /* or left, depending on layout */
+    color: #e9f5e4;        /* keep text color if needed */
+    display: flex;         /* keep icons inline */
+    align-items: center;
+  }
 
 @media (min-width: 768px) {
 .icon {
